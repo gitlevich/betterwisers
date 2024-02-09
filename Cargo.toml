@@ -27,6 +27,7 @@ tower = "0.4"
 tower-http = "0.4"
 
 lambda_http = "0.8"
+uuid = { version = "1.7.0", features = ["serde", "v4"] }
 
 [[bin]]
 name = "cqrs-demo"
