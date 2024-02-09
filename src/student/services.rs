@@ -2,7 +2,6 @@ use async_trait::async_trait;
 use crate::student::events::StudentError;
 
 use crate::student::lesson::Lesson;
-
 use crate::student::types::EntityId;
 
 pub struct StudentServices {

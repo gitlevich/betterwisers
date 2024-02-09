@@ -1,4 +1,4 @@
-pub mod student;
+pub mod aggregate;
 pub mod commands;
 pub mod events;
 mod types;

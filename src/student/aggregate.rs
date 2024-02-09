@@ -116,7 +116,7 @@ mod tests {
     use crate::student::events::{StudentError, StudentEvent};
     use crate::student::lesson::Lesson;
     use crate::student::services::{StudentApi, StudentServices};
-    use crate::student::student::Student;
+    use crate::student::aggregate::Student;
     use crate::student::types::EntityId;
 
     type StudentTestFramework = TestFramework<Student>;
