@@ -1,8 +1,7 @@
+use crate::model::study::events::StudentError;
+use crate::model::study::lesson::Lesson;
+use crate::model::types::EntityId;
 use async_trait::async_trait;
-use crate::student::events::StudentError;
-
-use crate::student::lesson::Lesson;
-use crate::student::types::EntityId;
 
 pub struct StudentServices {
     pub services: Box<dyn StudentApi>,

@@ -3,11 +3,11 @@ use cqrs_es::Aggregate;
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
-use crate::student::commands::StudentCommand;
-use crate::student::events::{StudentError, StudentEvent};
-use crate::student::types::EntityId;
-use crate::student::lesson::Lesson;
-use crate::student::services::StudentServices;
+use crate::model::study::commands::StudentCommand;
+use crate::model::study::events::{StudentError, StudentEvent};
+use crate::model::types::EntityId;
+use crate::model::study::lesson::Lesson;
+use crate::model::study::services::StudentServices;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Student {
@@ -112,12 +112,12 @@ mod tests {
     use std::sync::Mutex;
     use axum::handler::Handler;
     use cqrs_es::test::TestFramework;
-    use crate::student::commands::StudentCommand;
-    use crate::student::events::{StudentError, StudentEvent};
-    use crate::student::lesson::Lesson;
-    use crate::student::services::{StudentApi, StudentServices};
-    use crate::student::aggregate::Student;
-    use crate::student::types::EntityId;
+    use crate::model::study::commands::StudentCommand;
+    use crate::model::study::events::{StudentError, StudentEvent};
+    use crate::model::study::lesson::Lesson;
+    use crate::model::study::services::{StudentApi, StudentServices};
+    use crate::model::study::aggregate::Student;
+    use crate::model::types::EntityId;
 
     type StudentTestFramework = TestFramework<Student>;
 

@@ -1,5 +1,5 @@
 use serde::{Deserialize, Serialize};
-use crate::student::types::{Answer, EntityId, Id, Seconds};
+use crate::model::types::{Answer, EntityId, Id, Seconds};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum StudentCommand {

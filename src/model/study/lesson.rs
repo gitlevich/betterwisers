@@ -1,5 +1,5 @@
 use serde::{Deserialize, Serialize};
-use crate::student::types::{EntityId, Id};
+use crate::model::types::{EntityId, Id};
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub struct Lesson {

@@ -8,4 +8,4 @@ mod queries;
 pub mod route_handler;
 mod services;
 pub mod state;
-mod student;
+pub mod model;

@@ -1,8 +1,8 @@
 use cqrs_es::DomainEvent;
 use serde::{Deserialize, Serialize};
 use std::fmt::{Debug, Display, Formatter};
-use crate::student::lesson::Lesson;
-use crate::student::types::{Answer, EntityId, Id, Seconds};
+use crate::model::study::lesson::Lesson;
+use crate::model::types::{Answer, EntityId, Id, Seconds};
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
 pub enum StudentEvent {
